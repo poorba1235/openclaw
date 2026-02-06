@@ -7,7 +7,7 @@ primary_region = "iad" # You can change this to your preferred region
 [mounts]
   source = "openclaw_data"
   destination = "/root/.openclaw/workspace"
-  initial_size = "1gb"
+  initial_size = "2gb"
 
 [http_service]
   internal_port = 18789 # Default OpenClaw gateway port
