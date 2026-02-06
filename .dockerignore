@@ -1,7 +1,0 @@
-.git
-.gitignore
-.env
-node_modules
-workspace
-openclaw.json
-openclaw.json.bak*

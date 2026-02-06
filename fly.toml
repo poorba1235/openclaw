@@ -1,7 +1,4 @@
-# fly.toml app configuration file generated for openclaw-agent-demo-aged-dew-1243 on 2026-02-06T21:20:08+05:30
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
+
 
 app = 'openclaw-agent-demo-aged-dew-1243'
 primary_region = 'iad'

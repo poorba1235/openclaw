@@ -1,13 +1,17 @@
-FROM openclaw/openclaw:latest
+FROM node:20-slim
 
-# Set the working directory to where OpenClaw expects the workspace
-WORKDIR /root/.openclaw/workspace
+# Install openclaw globally
+RUN npm install -g openclaw
 
-# Copy the local workspace files into the image
+# Set working directory to the default configuration location
+WORKDIR /root/.openclaw
+
+# Copy local configuration files (openclaw.json, etc.)
 COPY . .
 
-# Default command to run OpenClaw
-# The base image already has an ENTRYPOINT/CMD that runs the agent.
-# We don't need to override it unless we want to change flags.
-# By default, it runs the gateway/agent.
-CMD ["node", "dist/index.js", "gateway"]
+# Expose the gateway port
+EXPOSE 18789
+
+# Run the gateway
+CMD ["openclaw", "gateway", "--port", "18789"]
+

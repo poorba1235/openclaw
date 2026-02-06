@@ -17,7 +17,7 @@
       "token": "937a27ed844e137e239b771d705f8c59e841a2ec9b07e75f"
     },
     "port": 18789,
-    "bind": "loopback",
+    "bind": "0.0.0.0",
     "tailscale": {
       "mode": "off",
       "resetOnExit": false
