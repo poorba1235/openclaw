@@ -1,0 +1,10 @@
+@echo off
+rem OpenClaw Gateway (v2026.2.2-3)
+set PATH=C:\Users\USER\.bun\bin;E:\oracle\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\xamp1\php;D:\xamp1\htdocs;E:\Git\cmd;C:\Program Files\Java\jdk-17\bin;E:\apache-maven-3.9.4\bin;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;D:\Google cloud\google-cloud-sdk\bin;C:\Program Files\CMake\bin;C:\Program Files\Amazon\AWSCLIV2\;D:\bin;C:\Users\USER\AppData\Local\Programs\Python\Python313\;C:\Users\USER\AppData\Local\Programs\Python\Python313\Scripts\;C:\Program Files\nodejs\;C:\Program Files\GitHub CLI\;C:\Users\USER\AppData\Local\Programs\Python\Launcher\;C:\Users\USER\.cargo\bin;D:\Scripts\;D:\;E:\java;C:\Program Files\Docker\Docker\resource;D:\Library\bin;C:\Users\USER\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\USER\AppData\Roaming\npm\node_modules\npm;C:\Users\USER\AppData\Roaming\npm;C:\Users\USER\.fly\bin;E:\Antigravity\bin
+set OPENCLAW_GATEWAY_PORT=18789
+set OPENCLAW_GATEWAY_TOKEN=017118d00b621a60b1ce069c13ed2bff30b3f9b69ae590d3
+set OPENCLAW_SYSTEMD_UNIT=openclaw-gateway.service
+set OPENCLAW_SERVICE_MARKER=openclaw
+set OPENCLAW_SERVICE_KIND=gateway
+set OPENCLAW_SERVICE_VERSION=2026.2.2-3
+"C:\Program Files\nodejs\node.exe" C:\Users\USER\AppData\Roaming\npm\node_modules\openclaw\dist\index.js gateway --port 18789

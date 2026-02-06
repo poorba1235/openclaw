@@ -1,0 +1,18 @@
+app = "openclaw-agent-demo"
+primary_region = "iad" # You can change this to your preferred region
+
+[build]
+  dockerfile = "Dockerfile"
+
+[mounts]
+  source = "openclaw_data"
+  destination = "/root/.openclaw/workspace"
+  initial_size = "1gb"
+
+[http_service]
+  internal_port = 18789 # Default OpenClaw gateway port
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]

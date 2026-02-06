@@ -1,0 +1,36 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "C:\\Users\\USER\\.openclaw\\workspace",
+      "model": {
+        "primary": "openai/gpt-4o"
+      },
+      "models": {
+        "openai/gpt-4o": {}
+      }
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "937a27ed844e137e239b771d705f8c59e841a2ec9b07e75f"
+    },
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-06T15:01:07.643Z",
+    "lastRunVersion": "2026.2.2-3",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.2.2-3",
+    "lastTouchedAt": "2026-02-06T15:01:07.679Z"
+  }
+}
